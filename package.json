@@ -1,0 +1,31 @@
+{
+  "name": "azure-terraformer",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "author": "e53e04ac",
+  "homepage": "https://github.com/e53e04ac/azure-terraformer#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e53e04ac/azure-terraformer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/e53e04ac/azure-terraformer/issues"
+  },
+  "type": "module",
+  "types": "./index.d.ts",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "event-emitter": "github:e53e04ac/event-emitter",
+    "file-entry": "github:e53e04ac/file-entry",
+    "hold": "github:e53e04ac/hold",
+    "string-template": "github:e53e04ac/string-template"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18"
+  }
+}
