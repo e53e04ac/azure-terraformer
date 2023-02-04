@@ -508,17 +508,6 @@ const constructor = ((options) => {
                 })
             );
         }),
-        node: (async (params) => {
-            return await _self.spawn({
-                stdio: 'inherit',
-                command: params.node,
-                args: [
-                    params.script,
-                    ...params.args,
-                ],
-                cwd: params.cwd,
-            });
-        }),
         azAcrLogin: (async (params) => {
             return await _self.spawn({
                 stdio: 'inherit',
@@ -587,6 +576,46 @@ const constructor = ((options) => {
                 args: [
                     'image', 'push',
                     params.name,
+                ],
+            });
+        }),
+        node: (async (params) => {
+            return await _self.spawn({
+                stdio: 'inherit',
+                command: params.node,
+                args: [
+                    params.script,
+                    ...params.args,
+                ],
+                cwd: params.cwd,
+            });
+        }),
+        tarCreate: (async (params) => {
+            return await _self.spawn({
+                stdio: 'inherit',
+                command: params.tar,
+                args: [
+                    '--create',
+                    '--file', params.file,
+                    '--verbose',
+                    '--xz',
+                    ...params.excludes.flatMap((exclude) => {
+                        return ['--exclude', exclude];
+                    }),
+                    '--directory', params.directory,
+                    '.',
+                ],
+            });
+        }),
+        tarExtract: (async (params) => {
+            return await _self.spawn({
+                stdio: 'inherit',
+                command: params.tar,
+                args: [
+                    '--extract',
+                    '--file', params.file,
+                    '--verbose',
+                    '--directory', params.directory,
                 ],
             });
         }),

@@ -349,14 +349,6 @@ export declare namespace AzureTerraformer {
                 readonly map: T;
             }): Promise<void>;
         };
-        readonly node: {
-            (params: {
-                readonly node: string;
-                readonly script: string;
-                readonly args: string[];
-                readonly cwd: string;
-            }): Promise<SpawnResult>;
-        };
         readonly azAcrLogin: {
             (params: {
                 readonly az: string;
@@ -401,6 +393,29 @@ export declare namespace AzureTerraformer {
             (params: {
                 readonly docker: string;
                 readonly name: string;
+            }): Promise<SpawnResult>;
+        };
+        readonly node: {
+            (params: {
+                readonly node: string;
+                readonly script: string;
+                readonly args: string[];
+                readonly cwd: string;
+            }): Promise<SpawnResult>;
+        };
+        readonly tarCreate: {
+            (params: {
+                readonly tar: string;
+                readonly file: string;
+                readonly directory: string;
+                readonly excludes: string[];
+            }): Promise<SpawnResult>;
+        };
+        readonly tarExtract: {
+            (params: {
+                readonly tar: string;
+                readonly file: string;
+                readonly directory: string;
             }): Promise<SpawnResult>;
         };
     };
