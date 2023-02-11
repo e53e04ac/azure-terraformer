@@ -11,7 +11,7 @@ import { azureTerraformer } from 'e53e04ac/azure-terraformer';
 
 ~~~~~ mermaid
 graph RL;
-  A(["e53e04ac/azure-terraformer"]);
+  A(["package.json"]);
   subgraph "dependencies";
     B_0(["e53e04ac/event-emitter"]);
     B_1(["e53e04ac/hold"]);
@@ -21,45 +21,52 @@ graph RL;
     B_3(["@types/node"]);
     B_4(["e53e04ac/file-entry"]);
   end;
-  A --reference--> B_0;
-  A --reference--> B_1;
-  A --reference--> B_2;
-  A --reference--> B_3;
-  A --reference--> B_4;
-  click B_0 "https://github.com/e53e04ac/event-emitter/tree/289e6320381f1be4d43177944eca0a12b665c4f7";
-  click B_1 "https://github.com/e53e04ac/hold/tree/2143f5f52192ae4156ea0af80d41c87c55355e9c";
-  click B_2 "https://github.com/e53e04ac/string-template/tree/1401fa1f193bbf78afe239bf4c9e99765f72a1c3";
+  A ----> B_0;
+  A ----> B_1;
+  A ----> B_2;
+  A ----> B_3;
+  A ----> B_4;
+  click B_0 "https://github.com/e53e04ac/event-emitter/tree/0c338d821268a5f0aaa42481216fd2e73c8734c9";
+  click B_1 "https://github.com/e53e04ac/hold/tree/285d028e225a7e75747417c3ed6b1ca0d5f52f6a";
+  click B_2 "https://github.com/e53e04ac/string-template/tree/680192ba42cf15272e880b59cae97b1d4bb6fe70";
   click B_3 "https://www.npmjs.org/package/@types/node/v/18.13.0";
-  click B_4 "https://github.com/e53e04ac/file-entry/tree/923119d07163b8f91b6138367a04760041225a06";
+  click B_4 "https://github.com/e53e04ac/file-entry/tree/54166105381939e5a1c4dee0af1f44705e5f44bc";
 ~~~~~
 
 ~~~~~ mermaid
 graph LR;
-  subgraph "e53e04ac/azure-terraformer"
-    C0("index.mjs");
-    C1("index.d.ts");
+  A(["index.mjs"])
+  subgraph "node:child_process";
+    B_0_0(["spawn"]);
   end;
-  subgraph "node:child_process"
-    D0(["spawn"]);
+  subgraph "event-emitter";
+    B_1_0(["EventEmitter"]);
   end;
-  subgraph "event-emitter"
-    D1(["EventEmitter"]);
+  subgraph "hold";
+    B_2_0(["hold"]);
   end;
-  subgraph "hold"
-    D2(["hold"]);
-    D5(["Get"]);
+  subgraph "string-template";
+    B_3_0(["StringTemplate"]);
   end;
-  subgraph "string-template"
-    D3(["StringTemplate"]);
+  B_0_0 ----> A;
+  B_1_0 ----> A;
+  B_2_0 ----> A;
+  B_3_0 ----> A;
+~~~~~
+
+~~~~~ mermaid
+graph LR;
+  A(["index.d.ts"])
+  subgraph "event-emitter";
+    B_0_0(["EventEmitter"]);
   end;
-  subgraph "file-entry"
-    D4(["FileEntry"]);
+  subgraph "file-entry";
+    B_1_0(["FileEntry"]);
   end;
-  D0 --import--> C0;
-  D1 --import--> C0;
-  D2 --import--> C0;
-  D3 --import--> C0;
-  D1 --import--> C1;
-  D4 --import--> C1;
-  D5 --import--> C1;
+  subgraph "hold";
+    B_2_0(["Get"]);
+  end;
+  B_0_0 ----> A;
+  B_1_0 ----> A;
+  B_2_0 ----> A;
 ~~~~~
