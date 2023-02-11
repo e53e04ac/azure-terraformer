@@ -24,11 +24,11 @@
   },
   "dependencies": {
     "event-emitter": "github:e53e04ac/event-emitter",
-    "file-entry": "github:e53e04ac/file-entry",
     "hold": "github:e53e04ac/hold",
     "string-template": "github:e53e04ac/string-template"
   },
   "devDependencies": {
-    "@types/node": "^18.11.19"
+    "@types/node": "^18.11.19",
+    "file-entry": "github:e53e04ac/file-entry"
   }
 }
