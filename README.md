@@ -26,11 +26,11 @@ graph RL;
   A ----> B_2;
   A ----> B_3;
   A ----> B_4;
-  click B_0 "https://github.com/e53e04ac/event-emitter/tree/58fd3772aa6977c80111d1af5425c38551c0da3e";
-  click B_1 "https://github.com/e53e04ac/hold/tree/5dd6f94b8ecd94f98219a7afae52320676380c27";
-  click B_2 "https://github.com/e53e04ac/string-template/tree/b18a076803b2e67ff299f6f9462ce1996d6217e4";
+  click B_0 "https://github.com/e53e04ac/event-emitter/tree/b3a7678f84ede6ae2111a8802360b326a57d3ef2";
+  click B_1 "https://github.com/e53e04ac/hold/tree/b0b5ef032800af76c6e7ae27472dbf25a04a947d";
+  click B_2 "https://github.com/e53e04ac/string-template/tree/fd35d8d5edb009702fa6b86a6d0d188c51aff09e";
   click B_3 "https://www.npmjs.org/package/@types/node/v/18.13.0";
-  click B_4 "https://github.com/e53e04ac/file-entry/tree/5e7bd3bb6438d7a2d7019e184729b9390342bb7d";
+  click B_4 "https://github.com/e53e04ac/file-entry/tree/429c78131e3cf32e41b18aeb702195320736eea8";
 ~~~~~
 
 ~~~~~ mermaid
