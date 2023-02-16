@@ -28,7 +28,7 @@ graph RL;
   A ----> B_4;
   click B_0 "https://github.com/e53e04ac/event-emitter/tree/93b9f205a7be92bb920d2d4f13efa78be7b4ba5d";
   click B_1 "https://github.com/e53e04ac/hold/tree/b0b5ef032800af76c6e7ae27472dbf25a04a947d";
-  click B_2 "https://github.com/e53e04ac/string-template/tree/8ded0e0c32313a806e268b52315396e42e3e29b4";
+  click B_2 "https://github.com/e53e04ac/string-template/tree/ad536ba781134b02d45799246d627e397fb2f18c";
   click B_3 "https://www.npmjs.org/package/@types/node/v/18.13.0";
   click B_4 "https://github.com/e53e04ac/file-entry/tree/c0427d9ba9c8481a9e2acf4af4e7aa46b96314a9";
 ~~~~~
