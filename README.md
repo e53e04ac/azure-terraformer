@@ -30,7 +30,7 @@ graph RL;
   click B_1 "https://github.com/e53e04ac/hold/tree/3191dd4704f3e5f90d6c27f288ede7700f5fdb66";
   click B_2 "https://github.com/e53e04ac/string-template/tree/5d406da4e10981a4fad93981115baed7a8fcae57";
   click B_3 "https://www.npmjs.com/package/@types/node/v/18.14.0";
-  click B_4 "https://github.com/e53e04ac/file-entry/tree/c972d64414ab71efd73ea068fd42583938be938c";
+  click B_4 "https://github.com/e53e04ac/file-entry/tree/19444d5321ee7ab4d8885be24d501a55ddf04259";
 ~~~~~
 
 ~~~~~ mermaid
