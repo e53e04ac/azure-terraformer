@@ -347,6 +347,11 @@ export declare namespace AzureTerraformer {
             <T extends Record<string, number | string>>(params: {
                 readonly destination: FileEntry;
                 readonly map: T;
+                readonly replacer?: {
+                    (key: string, value: unknown): unknown;
+                };
+                readonly space?: number | string;
+                readonly encoding?: BufferEncoding;
             }): Promise<void>;
         };
         readonly azAcrLogin: {

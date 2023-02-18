@@ -505,7 +505,12 @@ const constructor = ((options) => {
             await params.destination.writeJson(
                 Object.entries(params.map).map(([name, value]) => {
                     return { name, value };
-                })
+                }),
+                {
+                    replacer: params.replacer,
+                    space: params.space,
+                    encoding: params.encoding,
+                }
             );
         }),
         azAcrLogin: (async (params) => {
