@@ -10,16 +10,16 @@ import { Get } from 'hold';
 
 export declare namespace AzureTerraformer {
 
-    type EventSpecs = Record<never, never>;
-
-    type Options = Record<never, never>;
-
     type SpawnResult = {
         readonly code: null | number;
         readonly signal: null | NodeJS.Signals;
         readonly stdout: Buffer;
         readonly stderr: Buffer;
     };
+
+    type Options = Record<never, never>;
+
+    type EventSpecs = Record<never, never>;
 
     type _Self = {
         readonly options: Get<Options>;
