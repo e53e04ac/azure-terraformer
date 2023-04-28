@@ -29,7 +29,7 @@
     "string-template": "github:e53e04ac/string-template"
   },
   "devDependencies": {
-    "@types/node": "^18.11.19",
+    "@types/node": "^18.16.2",
     "file-entry": "github:e53e04ac/file-entry"
   }
 }
